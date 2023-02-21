@@ -27,3 +27,25 @@ WebContainers, except it's a million times easier to use.
 </body>
 </html>
  ```
+# Setup
+- Download one of Wenode distributions from [dist/](./dist) and place it in webserver
+- Configure headers so WebContainers API works
+  - `Cross-Origin-Embedder-Policy: require-corp`
+  - `Cross-Origin-Opener-Policy: same-origin`
+- Start webserver
+
+# Usage
+- The `file` tag
+  - This tag is used to store text in a file before running code.
+  - Usage:
+    - `<file name="file_name_here.txt"> Hello, world! </file>`
+- The `script[type=wenode]` tag
+  - This tag is used for running code directly.
+  - Usage:
+    - `<script type="wenode" packages="express chalk" (Optional) no-autostart (Optional) client="#my-iframe-id" (Optional) esm (Optional)> console.log("Hello. world!"); </script>`
+  - Events:
+    - `onserver` (Activated when port opened)
+    - `oninstall` (Activated on successful installation)
+    - `oninstallfail` (Activated on failed installation) 
+  - Functions
+    - `wenode_elem.run()` - runs a non-automatically executing script
