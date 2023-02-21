@@ -1,5 +1,5 @@
 # Wenode
-WebContainers, except it's a million times easier to use.
+[WebContainers](https://webcontainers.io), except it's a million times easier to use.
 
 # Demo URL
 https://wenode.seven7four4.repl.co (hosted on Replit to be able to use SharedArrayBuffers)
