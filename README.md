@@ -47,5 +47,6 @@ WebContainers, except it's a million times easier to use.
     - `onserver` (Activated when port opened)
     - `oninstall` (Activated on successful installation)
     - `oninstallfail` (Activated on failed installation) 
+    - `onoutput` (Activated on output, only callback that returns a parameter) 
   - Functions
     - `wenode_elem.run()` - runs a non-automatically executing script
