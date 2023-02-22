@@ -56,4 +56,5 @@ https://wenode.seven7four4.repl.co (hosted on Replit to be able to use SharedArr
   - A tag which includes the `node_modules` folder already set up, so there is no need for installation, which speeds things up
   - Usage: `<module src="node_modules.bin"></module>`
     - Files are generated using the [create-module](scripts/create-module) script
+    - Usage of the script: `node create-module node_modules.bin`
     - Note: you need to be in a directory which has a `node_modules` folder, but you cannot be inside of the `node_modules` folder itself
