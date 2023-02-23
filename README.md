@@ -55,7 +55,7 @@ https://wenode.seven7four4.repl.co (hosted on Replit to be able to use SharedArr
 - The `fs` tag
   - A tag which has a file system already set up, so no installation or fetching is required, which speeds things up by a lot
   - Usage: `<fs src="node_modules.bin"></fs>`
-    - Files are generated using the [create-node-modules](scripts/create-node-modules.kjs) and [repo-to-fs](scripts/repo-to-fs.js) scripts
+    - Files are generated using the [create-node-modules](scripts/create-node-modules.js) and [repo-to-fs](scripts/repo-to-fs.js) scripts
     - Usage of the scripts: 
       - `node create-node-modules node_modules.bin`
       - `node repo-to-fs https://github.com/expressjs/express expressjs.bin`
