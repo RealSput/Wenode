@@ -52,9 +52,11 @@ https://wenode.seven7four4.repl.co (hosted on Replit to be able to use SharedArr
     - `onoutput` (Activated on output, only callback that returns a parameter) 
   - Functions
     - `wenode_elem.run()` - runs a non-automatically executing script
-- The `module` tag
-  - A tag which includes the `node_modules` folder already set up, so there is no need for installation, which speeds things up
-  - Usage: `<module src="node_modules.bin"></module>`
-    - Files are generated using the [create-module](scripts/create-module) script
-    - Usage of the script: `node create-module node_modules.bin`
-    - Note: you need to be in a directory which has a `node_modules` folder, but you cannot be inside of the `node_modules` folder itself
+- The `fs` tag
+  - A tag which has a file system already set up, so no installation or fetching is required, which speeds things up by a lot
+  - Usage: `<fs src="node_modules.bin"></fs>`
+    - Files are generated using the [create-node-modules](scripts/create-node-modules) and [repo-to
+    -fs](scripts/repo-to-fs) scripts
+    - Usage of the scripts: 
+      - `node create-node-modules node_modules.bin`
+      - `node repo-to-fs https://github.com/expressjs/express expressjs.bin`
