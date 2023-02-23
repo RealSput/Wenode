@@ -705,7 +705,7 @@ function makeid(length) {
       next();
     });
   }
-  let mtags = Array.from(document.querySelectorAll('modules'));
+  let mtags = Array.from(document.querySelectorAll('fs'));
   if (mtags.length !== 0) {
     await loop(mtags, async (x, _, next) => {
       let fr = await fetch(x.getAttribute('src'));
